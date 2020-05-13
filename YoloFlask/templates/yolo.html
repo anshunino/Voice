@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/stylesheet_yolo.css') }}">
+        <title>voice.com/approach</title>
+    </head>
+
+    <body>
+        <div id="header"><h1>The Approach : YOLO</h1></div>
+        <div id="navbar">
+            <ul>
+                <li><a href="http://127.0.0.1:5000"><<<< Go back to Home Page</a></li>
+                <li><a href="http://127.0.0.1:5000/rec">Try Out the Image Rec!!!>>>></a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <p>YOLO (You Only Look Once) real-time object detection algorithm, which is one of the most effective object detection algorithms that also encompasses many of the most innovative ideas coming out of the computer vision research community.</p>
+            <p>YOLO came on the computer vision scene with the seminal 2015 paper by Joseph Redmon et al.<a href="https://arxiv.org/abs/1506.02640">“You Only Look Once: Unified, Real-Time Object Detection”</a> and immediately got a lot of attention by fellow computer vision researchers. Here is a <a href="https://www.youtube.com/watch?v=Cgxsv1riJhI&feature=youtu.be">TED talk</a> by University of Washington researcher Redmon in 2017 highlighting the state of the art in computer vision.</p> 
+            
+        </div>
+        <div class="beforeimage">
+            <h2>WHAT IS YOLO???</h2>
+        </div>
+
+        <div class="withimage">
+            <img class="image" src="{{ url_for('static',filename='styles/yolo_image.jpg') }}">
+            <p>Object detection is one of the classical problems in computer vision where you work to recognize what and where — specifically what objects are inside a given image and also where they are in the image. The problem of object detection is more complex than classification, which also can recognize objects but doesn’t indicate where the object is located in the image. In addition, classification doesn’t work on images containing more than one object.</p>
+            <p>YOLO uses a totally different approach. YOLO is a clever convolutional neural network (CNN) for doing object detection in real-time. The algorithm applies a single neural network to the full image, and then divides the image into regions and predicts bounding boxes and probabilities for each region. These bounding boxes are weighted by the predicted probabilities.</p>
+            <p>YOLO is popular because it achieves high accuracy while also being able to run in real-time. The algorithm “only looks once” at the image in the sense that it requires only one forward propagation pass through the neural network to make predictions. After non-max suppression (which makes sure the object detection algorithm only detects each object once), it then outputs recognized objects together with the bounding boxes.</p>
+        </div>
+    </body>
+</html>
