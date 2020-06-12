@@ -21,7 +21,7 @@ def about():
 @app.route('/rec')
 def rec():    
     yolo_cam()
-    return render_template("rec.html")
+    return render_template("rec1.html")
 
 @app.route('/yolo')
 def yol():
